@@ -1,0 +1,131 @@
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap);
+*{
+    display: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+.container{
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    overflow: auto;
+}
+
+.sedan{
+    display: block;
+    max-width: 278px;
+    height: 450px;
+    padding: 42px;
+    position: relative;
+    color: white;
+    background: hsl(31, 77%, 52%);
+    border-radius: 2% 0% 0% 2%;
+}
+
+.suvs{
+    display: block;
+    max-width: 278px;
+    height: 450px;
+    padding: 42px;
+    position: relative;
+    color: white;
+    background: hsl(184, 100%, 22%);
+    
+}
+
+.luxury{
+    display: block;
+    max-width: 278px;
+    height: 450px;
+    padding: 42px;
+    position: relative;
+    color: white;
+    background: hsl(179, 100%, 13%);
+    border-radius: 0% 2% 2% 0%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.title{
+    padding: 20px 0px 0px 0px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.about{
+    padding: 20px 0px 200px 0px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+button {
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    padding: 14px;
+    width: 146px;
+    border-radius: 25px;
+    outline: none;
+    border: 2px solid white;
+    font-family: inherit;
+    transition: all 0.2s ease-in-out;
+    bottom: 42px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.sedan button:hover{
+    background: none;
+    color: white;
+}
+
+.suvs button:hover{
+    background: none;
+    color: white;
+}
+
+.luxury button:hover{
+    background: none;
+    color: white;
+}
+
+.sedan button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 756px) {
+    .sedan{
+        border-radius: 0% 0% 0% 0%;
+    }
+    .luxury{
+        border-radius: 0% 0% 0% 0%;
+    }
+}
+
+@media (max-width: 560px) {
+    .sedan{
+        padding: 54px;
+    }
+}
