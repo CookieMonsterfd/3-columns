@@ -82,6 +82,7 @@ button {
     border-radius: 25px;
     outline: none;
     border: 2px solid white;
+    background-color: white;
     font-family: inherit;
     transition: all 0.2s ease-in-out;
     bottom: 42px;
@@ -126,6 +127,6 @@ button {
 
 @media (max-width: 560px) {
     .sedan{
-        padding: 54px;
+        padding: 54.1px;
     }
 }
